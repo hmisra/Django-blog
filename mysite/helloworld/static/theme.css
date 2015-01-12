@@ -1,18 +1,4 @@
-aside {
-  background-color:white;
-  color:#000;
-  font-family: 'Open Sans', sans-serif;
-  text-align:left;
-  font-size:4%;
-  width:23%;
-  float:left;
-  position:fixed;
-  left:0%;
-  bottom:2%;
-  top:2%;
-  border-right:1px solid grey;
-  margin-bottom:1%;
-}
+
 #bio{
   font-size:12px;
 }
@@ -30,15 +16,6 @@ aside {
   margin-left:3%;
 }
 #maincontent{
-  margin-left:0.5%;
-  margin-top:0.5%;
-  margin-bottom:2%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-  padding: 2%;
-  width:67%;
-  float:left;
-  position:absolute;
-  top:1%;
-  right:5%;
   font-family: 'Open Sans', sans-serif;
 }
 a {
@@ -57,7 +34,3 @@ section {
   float:left;
   padding:1%;
 }
-body{
-  margin:0;
-  }
-
