@@ -1,17 +1,21 @@
 
 #bio{
+  color:#606060  ;
   font-size:12px;
 }
 #contactinfo{
+  color:#606060  ;
   border-top:1px dashed;
   width:95%;
 }
 #jobs{
+  color:#606060  ;
   border-top:1px dashed;
   width:95%;
 }
 #links
 {
+  color:#606060  ;
   padding:0.5%;
   margin-left:3%;
 }

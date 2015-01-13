@@ -29,9 +29,8 @@
 
       <div class="collapse navbar-collapse nav-collapse navbar-right">
         <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blogs</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
         </ul>
       </div><!--close navbar-collapse-->
     </div><!--close container-->
@@ -70,17 +69,17 @@
 
 
 
-  <div class="container" style="width:100%;">
+  <div class="container" style="width:95%;">
     <div class="row">
       <div class="col-md-3">
-        <div id="bio" style="margin-left:0px;">
+        <div id="bio" style="margin-left:0px;border-right:solid 1px #DCDCDC;">
           <ul style="list-style-type:none;">
-            <li>&nbsp;<img src="/static/img.jpg" alt="Himanshu Misra" height="250px" width="210px" style="border: 1px solid;border-radius:10px;box-shadow:0px 2px 2px #000;">
+            <li>&nbsp;<img src="/static/img.jpg" alt="Himanshu Misra" height="250px" width="230px" style="border: 1px solid;border-radius:10px;box-shadow:0px 2px 2px #000;">
             </li>
             <li style="font-size:20px">&nbsp;Himanshu <b>Misra</b>
             </li>
             <li>&nbsp;&nbsp;&nbsp;Graduate Student at USC</li>
-            <li style="color:#000;">&nbsp;&nbsp;&nbsp;Passionate about Machine Learning,
+            <li style="color:#606060  ;">&nbsp;&nbsp;&nbsp;Passionate about Machine Learning,
               <br>&nbsp;&nbsp; Artificial Intelligence,Data Science </li>
             <br>
             <div id="jobs">
@@ -118,8 +117,6 @@
               </div>
             </div>
 
-
-
             <br>
             <br>
 
@@ -127,12 +124,12 @@
       </div>
 
       <div class="col-md-9">
-        <div id="maincontent" style="border-left:solid 1px #DCDCDC;">
+        <div id="maincontent" >
 
           {% if allblogs %}
           <ul style="list-style-type:none;">
             {% for blog in allblogs %}
-            <li><font size="3px"><a href="blog/{{ blog.id }}">{{ blog.title }}</a></font>&nbsp;&nbsp;<font size="2px"> {{blog.pub_date}}</font>
+            <li><font size="3px"><b><a href="blog/{{ blog.id }}">{{ blog.title }}</a></b></font>&nbsp;&nbsp;<font size="2px"> {{blog.pub_date}}</font>
               <br><font size="2px">{{blog.summary|safe}} </font>
               <br>
               <br>
