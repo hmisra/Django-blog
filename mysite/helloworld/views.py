@@ -11,7 +11,7 @@ def home(request):
 def blog(request, blog_id):
     blog=Blogs.objects.get(id=blog_id)
     context={'blog':blog}
-    return render(request,"helloworld/index.html", context)
+    return render(request,"helloworld/singleblog.html", context)
 
 def bloghome(request):
     allblogs=Blogs.objects.all()
