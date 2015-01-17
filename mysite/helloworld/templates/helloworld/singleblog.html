@@ -130,17 +130,31 @@
 
       <div class="col-md-9">
         <div id="maincontent">
-          <br> {% if allblogs %}
-          <ul style="list-style-type:none;margin:0;padding:0;">
-            {% for blog in allblogs %}
-            <li><font size="3px"><b><a href="blog/{{ blog.id }}">{{ blog.title }}</a></b></font>&nbsp;&nbsp;<font size="2px"> {{blog.pub_date}}</font>
-              <br><font size="2px">{{blog.summary|safe}} </font>
-              <br>
-              <br>
-            </li>
+          <br> {% if blog %}
 
-            {% endfor %}
-          </ul>
+          <font size="3px"><b><a href="#">{{ blog.title }}</b></a></font>&nbsp;&nbsp;<font size="2px"> {{blog.pub_date}}</font>
+          <br>
+          <br><font size="2px">{{blog.content|safe}} </font>
+          <br>
+          <br>
+
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'himanshumisra'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+              var dsq = document.createElement('script');
+              dsq.type = 'text/javascript';
+              dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+          </noscript>
+
           {% endif %}
         </div>
       </div>

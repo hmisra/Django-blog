@@ -21,6 +21,7 @@
 }
 #maincontent{
   font-family: 'Open Sans', sans-serif;
+  margin-right:5%;
 }
 a {
   color: #0060B6;
@@ -37,4 +38,11 @@ section {
 
   float:left;
   padding:1%;
+}
+.writtencontent{
+  font-size:10px;
+}
+.subheading{
+  font-size:14px;
+  font-weight:bold;
 }
