@@ -1,0 +1,60 @@
+
+#bio{
+  color:#606060  ;
+  font-size:12px;
+}
+#contactinfo{
+  color:#606060  ;
+  border-top:1px dashed;
+  width:95%;
+}
+#jobs{
+  color:#606060  ;
+  border-top:1px dashed;
+  width:95%;
+}
+#links
+{
+  color:#606060  ;
+  padding:0.5%;
+  margin-left:3%;
+}
+#maincontent{
+  font-family: 'Open Sans', sans-serif;
+  margin-right:5%;
+}
+a[href] {
+  color: #0060B6;
+  text-decoration: none;
+  cursor:pointer;
+}
+a[href]:visited {
+  color: #0060B6;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+a[href]:focus {
+  color: #0060B6;
+  text-decoration: none;
+  cursor:pointer;
+}
+a[href]:hover
+{
+  color:#00A0C6;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+section {
+
+  float:left;
+  padding:1%;
+}
+.writtencontent{
+  font-size:10px;
+}
+.subheading{
+  font-size:14px;
+  font-weight:bold;
+}
