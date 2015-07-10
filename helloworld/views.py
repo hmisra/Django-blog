@@ -17,3 +17,7 @@ def bloghome(request):
     allblogs=Blogs.objects.all()
     context={'allblogs':allblogs}
     return render(request,"helloworld/blog.html", context)
+
+def recursiveBayes(request):
+    context={}
+    return render(request, "helloworld/rbfblogpost.html", context)
